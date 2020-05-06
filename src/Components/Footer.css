@@ -11,20 +11,30 @@ footer .grid{
     margin-right: 10%;
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    grid-gap: 30px;
+    grid-gap: 40px;
     padding-top: 50px
 }
 
 footer .grid p{
-    margin-top: 20px;
-    color: #dcdcdc
+    margin-top: 16px;
+    color: #CACACA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .grid .center{
+    padding-left: 20%
+}
+
+footer .grid strong{
+    font-size:18px;
+    font-weight: 600
 }
 
 footer .grid .icons img{
-   margin-right:5px;
+   margin-right:15px;
    height:20px;
    width:20px;
-   margin-top: 20px
+   margin-top: 50px
 }
 
 footer .grid .link{
@@ -32,28 +42,33 @@ footer .grid .link{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items: center;
-    text-align: center;
 }
 
 footer .grid .link span{
     border-bottom:1px dashed #C53418;
-    width:100%;
+    width:60%;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-footer .grid .link span a{
-    color:#dcdcdc
+footer .grid .link .no-border{
+    border-bottom:0px dashed #C53418;
+
 }
 
-footer .grid .getintouch{
-    color:#828282
+footer .grid .link span a{
+    font-size:16px;
+    color:#CACACA
+}
+
+footer .grid .getintouch p{
+    margin-top:10%;
+
 }
 
 footer .grid .reachus{
     background:url('../assets/map.png');
-    height:200px;
+    height:185px;
     width:100%;
     background-position: center;
     background-size: cover;
@@ -65,8 +80,13 @@ footer .grid .reachus{
     justify-content: center;
     align-items: center;
     background-color: #000000;
-    color:#ffffff;
-    padding: 20px
+    color:#CACACA;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.copyright strong {
+    margin-left:10px
 }
 
 @media screen and (max-width: 1000px) {

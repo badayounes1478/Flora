@@ -1,4 +1,5 @@
 import React from 'react'
+import next  from '../assets/back.svg'
 import './Courses.css'
 
 const Courses = () => {
@@ -12,11 +13,15 @@ const Courses = () => {
 
             </div>
             <span>ENGINEERING / MTECH</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aspernatur laboriosam corporis tenetur sed facere numquam perferendis.
-             Quia maxime quod placeat quo. Doloremque suscipit quaerat nobis facere reiciendis sequi ab
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aspernatur laboriosam corporis tenetur sed facere numquam perferendis.
-             Quia maxime quod placeat quo. Doloremque suscipit quaerat nobis facere reiciendis sequi ab
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                industry's.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                been the industry's.
              </p>
+             <div className='download'>
+               <span>Download Brochure</span>
+               <img src={next} alt=""></img>
+             </div>
+
         </section>
     )
 }

@@ -1,23 +1,25 @@
 import React from 'react'
 import './Campus.css'
+import play from '../assets/play.svg'
 
 const Campus = () => {
     return (
         <section className="section2">
             <div className="grid">
                 <div className="content">
-                    <strong>Campus life at Flora Institiute</strong>
+                    <span>Campus life at Flora Institiute</span>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Est excepturi incidunt, pariatur repellendus maxime molestiae aut sequi,
-                            facilis enim sunt sed quia doloremque porro, harum aliquid corrupti accusantium dignissimos animi.
+                        <hr />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+                            galley of type and scrambled it to make a type specimen It has survived not only five centuries, but also the leap into electronic
                 </p>
                     </div>
                 </div>
             </div>
-            <div className="grid">
+            <div className="grid2">
                 <div className="vedio">
-
+                     <img src={play} alt="play" />
                 </div>
             </div>
         </section>

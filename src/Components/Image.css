@@ -5,15 +5,16 @@
     margin-bottom: 15px
 }
 
-.section7 div strong{
-    font-size: 20px
+.section7 div strong {
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.section7 div hr{
-    border:3px solid #FAD831;
-    width: 25px;
+.section7 div hr {
+    border: 2px solid #FAD831;
+    width: 100px;
     border-radius: 20px;
-    margin-right:10px
+    margin-right: 20px
 }
 
 .section7{
@@ -31,7 +32,31 @@
 .section7 .grid div{
     height:150px;
     width:150;
-    box-shadow:3px 3px 10px #dcdcdc 
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    width: 160px;
+height: 166px;
+background-color: #ffffff
+}
+
+.section7 .download {
+    margin:auto;
+    width:50%;
+    width: 209px;
+height: 56px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 50px
+}
+
+.section7 .download span{
+    font-size:20px;
+    font-weight:bold;
+    color:#000000;
+    padding-right: 10px
 }
 
 @media screen and (max-width: 950px) {

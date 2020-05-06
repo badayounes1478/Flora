@@ -14,10 +14,8 @@ const Footer = () => {
                 <div className="grid">
                     <div>
                         <strong>ABOUT FLORA INSTITUTE</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquam minima tempora blanditiis
-                            sint!
-                            Nisi voluptas fugit iste velit, sequi amet modi impedit numquam, debitis, quisquam maxime accusamus
-                    doloremque iure</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesettingindustry.
+                             Lorem Ipsum has been the industry's.</p>
                         <div className="icons">
                             <img src={facebook} alt="facebook" />
                             <img src={instagram} alt="instagram" />
@@ -25,14 +23,14 @@ const Footer = () => {
                             <img src={linkedin} alt="linkedin" />
                         </div>
                     </div>
-                    <div>
-                        <strong>ABOUT FLORA INSTITUTE</strong>
+                    <div className="center">
+                        <strong>QUICK LINKES</strong>
                         <div className="link">
                             <span><a href="#home">Home</a></span>
                             <span><a href="#admission">Admission</a></span>
                             <span><a href="#courses">Coureses</a></span>
                             <span><a href="#achivements">Achivements</a></span>
-                            <span><a href="#gallary">Gallary</a></span>
+                            <span className="no-border"><a href="#gallary">Gallary</a></span>
                         </div>
                     </div>
 
@@ -54,7 +52,7 @@ const Footer = () => {
             </footer>
             <div className="copyright">
                 <img src={copyright} alt="copyright" />
-                    <strong>Flora institiute of technology 2020</strong>
+                    <strong>Flora institute of technology 2020</strong>
         </div>
         </React.Fragment>
             )

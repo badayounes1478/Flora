@@ -3,50 +3,72 @@
     margin-left: 10%;
     margin-right: 10%;
 }
-.section6 div{
-    display:flex;
+
+.section6 div {
+    display: flex;
     align-items: center;
     margin-bottom: 15px
 }
 
-.section6 div strong{
-    font-size: 20px
+.section6 div strong {
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.section6 div hr{
-    border:3px solid #FAD831;
-    width: 25px;
+.section6 div hr {
+    border: 2px solid #FAD831;
+    width: 100px;
     border-radius: 20px;
-    margin-right:10px
+    margin-right: 20px
 }
 
-.college{
-    background:url('../assets/college_girl.jpg');
+.college {
+    background: url('../assets/college_girl.jpg');
     background-position: center;
     background-size: cover;
-    width:100%;
-    height:400px
+    width: 100%;
+    height: 528px
 }
 
-.section6 span{
+.section6 span {
     color: #C53418;
-    font-size: 18;
-    letter-spacing: 2px;
-    font-weight: bold
+    font-size: 24px;
+    font-weight: 600
 }
 
-.section6 p{
-    margin-top: 20px
+.section6 p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section6 .download {
+    margin:auto;
+    width:50%;
+    width: 278px;
+    height: 55px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+.section6 .download span{
+    font-size:20px;
+    font-weight:bold;
+    color:#000000;
+    padding-right: 10px
 }
 
 @media screen and (max-width: 670px) {
-    .college{
-        height:300px
+    .college {
+        height: 300px
     }
 }
 
 @media screen and (max-width: 500px) {
-    .college{
-        height:200px
+    .college {
+        height: 200px
     }
 }

@@ -4,12 +4,18 @@ import user from '../assets/user.svg'
 import school from '../assets/school.svg'
 import school1 from '../assets/school1.svg'
 import star from '../assets/star.svg'
+import rectangle from '../assets/Path.svg'
+
 
 const Achivement = () => {
     return (
         <section className="section4" id="achivements">
-            <div className="head">ACHIVEMENTS</div>
-            <div className="container">
+            <div className="head">
+                <img src={rectangle} alt="rect" >
+                </img>
+                <div>HIGHLIGHT</div>
+            </div>         
+               <div className="container">
                 <div className="container2">
                     <div className="header-achivements">
                         <div className="achivements">
@@ -17,6 +23,7 @@ const Achivement = () => {
                                 <img src={user} alt="user" />
                             </div>
                             <strong>Student Achivements</strong>
+                            <hr />
                         </div>
                         <div className="achivements">
                             <div className="logo">

@@ -3,10 +3,23 @@
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 20px;
     background-color:#C53418;
-    height:200px;
     padding-left: 5%;
-    padding-right:5%
+    padding-right:5%;
+    padding-top:5%;
+    padding-bottom:5px
 }
+
+.section8 .text{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    background-color:#C53418;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top:5px;
+    padding-bottom:5%
+}
+
 
 .section8 .numbers div{
     display:flex;
@@ -15,16 +28,24 @@
     flex-direction:column
 }
 
+.section8 .text div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column
+}
+
 .section8 .numbers div .num{
-    font-size:30px;
-    font-weight:bold;
+    font-size:40px;
+    font-weight:600;
     color:#fff;
 }
 
-.section8 .numbers div .content{
-    font-size:20px;
+.section8 .text div .content{
+    font-size:24px;
     color:#fff;
-    margin-top: 40px
+    margin-top: 40px;
+    text-align: center
 }
 
 @media screen and (max-width: 950px) {

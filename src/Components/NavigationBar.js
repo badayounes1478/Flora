@@ -1,5 +1,6 @@
 import React from 'react'
 import './NavigationBar.css'
+import image from '../assets/header_image.jpg'
 
 const NavigationBar = ({slide}) => {
     return (
@@ -12,8 +13,8 @@ const NavigationBar = ({slide}) => {
                 <div className="logo">
                     <div className="logo-image"></div>
                     <div className="content">
-                        <div>FLORA INSTITUTE OF TECHNOLOGY</div> 
-                        <span>lorem ipsum</span>
+                        <div className="black-text">FLORA INSTITUTE OF TECHNOLOGY</div> 
+                        <span className="black-text">lorem ipsum</span>
                     </div>
                 </div>
                 <ul>
@@ -33,6 +34,11 @@ const NavigationBar = ({slide}) => {
                 <div className="content2">
                     <div className="first-block">Admission open for B.E 2020-21</div>
                     <div className="second-block">ENQUIRY NOW</div>
+                </div>
+                <div className="image-card">
+                  <img src={image} alt="1"  className='active' />
+                  <img src={image} alt="2"   />
+                  <img src={image}  alt="3"  />
                 </div>
             </div>
         </header>

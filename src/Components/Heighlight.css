@@ -1,19 +1,21 @@
 .highlight {
-    margin-top: 100px
+    margin-top: 130px
 }
 
 .highlight .head {
     margin: auto;
     width: '50%';
-    height: 50px;
-    background-color: #C53418;
-    width: 300px;
-    font-size: 20px;
-    color: #dcdcdc;
+    width: 366px;
+    font-size: 22px;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px
+    position: relative;
+}
+
+.highlight .head div{
+    position:absolute
 }
 
 .highlight .card-section {
@@ -21,32 +23,40 @@
     grid-template-columns: repeat(3, 1fr);
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 80px;
+    margin-top: 40px;
     grid-gap: 50px
 }
 
 .highlight .card-section .card .box img {
     padding: 10px;
     background-color: #C53418;
-    height: 40px;
-    width: 40px;
-    margin-bottom: 20px
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 2px
 }
 
 .highlight .card-section .card {
-    box-shadow: -4px -3px #dcdcdc, 4px 3px #dcdcdc;
+    box-shadow:  0px 3px 6px #0000005C;;
     padding: 20px;
-    padding-left: 15%
+    padding-left: 15%;
+    border-radius: 10px;
 }
 
 .highlight .card-section .card strong {
-    font-size: 20px;
+    font-size: 26px;
+    font-weight:600
 }
 
 .highlight .card-section .card p {
     margin-top: 15px;
-    font-size: 18px;
-    width: 80%
+    font-size: 24px;
+    width: 80%;
+    letter-spacing: 0px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 60px;
+    padding-top: 30px
 }
 
 @media screen and (max-width: 1200px) {

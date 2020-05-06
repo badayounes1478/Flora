@@ -1,38 +1,39 @@
 .section4 {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .section4 .head {
     margin: auto;
-    width: 50%;
-    height: 50px;
-    background-color: #C53418;
-    width: 300px;
-    font-size: 20px;
-    color: #dcdcdc;
+    width: '50%';
+    width: 366px;
+    font-size: 22px;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px
+    position: relative;
+}
+
+.section4 .head div {
+    position: absolute
 }
 
 .section4 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    flex-direction: column
-}
-
-.section4 .container {
-    box-shadow: 3px 3px 10px #dcdcdc, -3px -3px 10px #dcdcdc;
+    flex-direction: column;
+    box-shadow: 0px 3px 6px #0000005C;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 20px
+    margin-top: 60px;
+    padding-bottom: 40px
 }
 
+
+
 .section4 .container .container2 {
-    width: 80%;
+    width: 100%;
 }
 
 .section4 .container .container2 .header-achivements {
@@ -43,34 +44,42 @@
 .section4 .container .container2 .header-achivements .achivements {
     padding: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column
 }
 
 .section4 .container .container2 .header-achivements .achivements .logo {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background-color: #C53418;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
     margin-bottom: 15px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 2px;
 }
 
 .section4 .container .container2 .header-achivements .achivements strong {
-    font-size: 18px
+    font-size: 26px;
+    font-weight: 600
+}
+
+.section4 .container .container2 .header-achivements .achivements hr {
+    border: 2px solid #FAD831;
+    width: 77%;
+    margin-top: 10px
 }
 
 .section4 .container .container4 {
-    width: 90%;
+    width: 100%;
 }
 
 .section4 .container .container4 .container3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px
+    grid-gap: 15px;
+    padding: 30px;
 }
 
 .section4 .container .container3 .content2,
@@ -85,8 +94,9 @@
 }
 
 .section4 .container .container3 .content2 .tropy {
-    box-shadow: 3px 3px 10px #dcdcdc, -3px -3px 10px #dcdcdc;
-    height: 300px;
+    box-shadow: 0px 3px 6px #0000005C;
+    border-radius: 5px;
+    height: 325px;
     width: 90%
 }
 
@@ -94,15 +104,20 @@
     display: flex;
     align-items: center;
     border-bottom: 2px solid #dcdcdc;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     width: 90%;
-    height: 300;
-    margin-bottom: 7px;
-    margin-top: 10px
+    padding-top: 15px
 }
 
 .section4 .container .container4 .container3 .content1 img {
-    margin-right: 10px
+    margin-right: 15px;
+    width: 32px;
+    height: 31px;
+}
+
+.section4 .container .container4 .container3 .content1 span {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 1266px) {

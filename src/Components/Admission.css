@@ -1,126 +1,142 @@
-.section9 .head{
-    margin:auto;
-    width:50%;
-    height:50px;
-    background-color:#C53418;
-    width:250px;
+.section9 .head {
+    margin: auto;
+    width: '50%';
+    width: 366px;
+    font-size: 22px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px
+}
+
+.section9 .head div {
+    position: absolute
+}
+
+.section9 .head1 {
+    margin: auto;
+    width: 50%;
+    height: 50px;
+    background-color: #C53418;
+    width: 150px;
     font-size: 20px;
-    color:#dcdcdc;
-    display:flex;
+    color: #dcdcdc;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
-.section9 .head1{
-    margin:auto;
-    width:50%;
-    height:50px;
-    background-color:#C53418;
-    width:200px;
-    font-size: 20px;
-    color:#dcdcdc;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin-top:25px;
-}
-
-.section9 .admission_card{
+.section9 .admission_card {
     margin-left: 10%;
     margin-right: 10%;
-    box-shadow:3px 3px 10px #dcdcdc , -3px -3px 10px #dcdcdc;
-    margin-top: 50px;  
-    padding-bottom:25px
+    box-shadow: 0px 3px 6px #0000005C;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+
 }
 
-.section9 .admission_card .tag hr{
-    border:3px solid #FAD831;
-    width: 25px;
+.section9 .admission_card .tag hr {
+    border: 1.5px solid #FAD831;
+    width: 60px;
     border-radius: 20px;
-    margin-right:10px
+    margin-right: 10px
 }
 
-.section9 .admission_card  strong{
-    font-size: 20px;
+.section9 .admission_card strong {
+    font-size: 24px;
     margin-left: 10px
 }
 
-.section9 .admission_card .tag{
-    padding:20px;
-    display:flex;
+.section9 .admission_card .tag {
+    padding: 20px;
+    display: flex;
     align-items: center;
 }
 
-.section9 .admission_card .grid{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:10px
+.section9 .admission_card .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px
 }
 
-.section9 .admission_card .grid .title{
-    display:flex;
-    align-items: center;
-    flex-direction:row
+.section9 .admission_card .grid .title {
+    display: flex;
+    flex-direction: row
+}
+
+.section9 .admission_card .grid .title img {
+    width: 32px;
+    height: 31px;
+}
+
+.section9 .admission_card .grid .title strong{
+    font-size: 22px;
+    font-weight: 600
 }
 
 
-.section9 .admission_card .grid div{
-    display:flex;
+.section9 .admission_card .grid div {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    padding:10px
+    justify-content: center;
+    padding: 10px
 }
 
-.section9 .admission_card .grid p{
-  width:80%;
-  margin-top: 20px
-}
-
-.section9 .form .tag hr{
-    border:3px solid #FAD831;
-    width: 25px;
-    border-radius: 20px;
-    margin-right:10px
-}
-
-.section9 .form .tag  strong{
+.section9 .admission_card .grid p {
+    width: 70%;
+    margin-top: 20px;
     font-size: 20px;
+    padding-left: 30px
+}
+
+.section9 .form .tag hr {
+    font-size: 24px;
     margin-left: 10px
 }
 
-.section9 .form .tag{
-    padding:20px;
-    display:flex;
+.section9 .form .tag strong {
+    font-size: 24px;
+    margin-left: 10px
+}
+
+.section9 .form .tag {
+    padding: 20px;
+    display: flex;
     align-items: center;
 }
 
+.section9 .form .grid{
+    margin-left:3%;
+    margin-right: 3%;
+}
 
 
-.section9 .form .add_text input{
+.section9 .form .add_text input {
     outline: none;
-    border:1px solid #828282;
-    height:30px;
-    width:80%;
-    border-radius:5px;
-    padding:5px;
+    border: 1px solid #828282;
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
     padding-left: 10px;
     background-color: #fff
 }
 
-.section9 .form .add_text select{
+.section9 .form .add_text select {
     outline: none;
-    border:1px solid #828282;
-    height:40px;
-    width:84%;
-    border-radius:5px;
-    padding:5px;
+    border: 1px solid #828282;
+    height: 40px;
+    width: 84%;
+    border-radius: 5px;
+    padding: 5px;
     padding-left: 10px;
     background-color: #fff;
-    color:#828282   
+    color: #828282
 }
 
 
@@ -132,36 +148,36 @@
 
 .section9 .form .grid .add_text span {
     position: absolute;
-    left:25%;
-    top:1px;
+    left: 10%;
+    top: 1px;
     background-color: #fff;
     padding-right: 10px;
     font-size: 14px;
-    color:#828282
+    color: #000000
 }
 
 @media screen and (max-width: 1130px) {
-    .section9 .admission_card .grid{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap:10px
+    .section9 .admission_card .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px
     }
 }
 
 @media screen and (max-width: 760px) {
-    .section9 .admission_card .grid{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap:10px
+    .section9 .admission_card .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px
     }
 
-    .section9 .head{
-        width:200px;
+    .section9 .head {
+        width: 200px;
         font-size: 16px;
     }
-    
-    .section9 .head1{
-        width:150px;
+
+    .section9 .head1 {
+        width: 150px;
         font-size: 16px;
     }
 }
