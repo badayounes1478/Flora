@@ -111,8 +111,8 @@
 }
 
 .section9 .form .grid{
-    margin-left:3%;
-    margin-right: 3%;
+    margin-left:5%;
+    margin-right:5%;
 }
 
 
@@ -168,16 +168,32 @@
     .section9 .admission_card .grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px
+        grid-gap: 10px;
     }
 
-    .section9 .head {
-        width: 200px;
+    .section9 .form .tag strong {
+        font-size: 20px;
+    }
+
+    .section9 .admission_card strong {
+        font-size: 20px;
+    }
+
+    .section9 .admission_card .grid .title strong{
+        font-size: 18px;
+    }
+
+    .section9 .admission_card .grid p {
         font-size: 16px;
     }
 
-    .section9 .head1 {
-        width: 150px;
-        font-size: 16px;
+    .section9 .form .add_text input {
+        width: 90%;
     }
+    
+    .section9 .form .add_text select {
+        width: 94%;
+    }
+    
+    
 }

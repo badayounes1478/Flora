@@ -34,14 +34,11 @@
   }
   
   
-  
   nav ul{
     display:flex;
     flex-direction: row;
   }
   
- 
-
   nav .logo .content{
     margin-left: 10px;
   }
@@ -134,7 +131,7 @@
   .header-image .image-card{
     position : absolute;
     bottom:56px;
-    right:184px;
+    right:8%;
   }
 
   .header-image .image-card img{
@@ -148,11 +145,10 @@
     border : 3px solid #C53418;
   }
   
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1000px) {
    nav ul{
        display: none
     }
-  
   
     .menu{
       display:unset;
@@ -181,38 +177,88 @@
     }
   
     .header-image .content2 {
-      height:40px;
+      height:60px;
+      width:250px;
+      bottom:-50px; 
     }
     
       .header-image .content2 .first-block{
-        font-size:14px;
+        font-size:16px;
         }
 
         .header-image .content2 .second-block{
-          font-size:12px;
+          font-size:14px;
           margin-top: 15px;
         }
   
         .header-image .content div{
-          height:30px;
-          font-size:12px
+          height:40px;
+          font-size:14px
         }
         
         .header-image .content .first-block {
-        width:150px; 
+        width:160px; 
         }
         
         .header-image .content .second-block{
-          width:230px; 
+          width:250px; 
         }
         
         .header-image .content .third-block {
-          width:190px;
+          width:200px;
         }
   
   }
+
+  @media screen and (max-width: 760px) {
+
+ 
+   .header-image .content {
+     top:100px;
+     left:80px;
+   }
+ 
+   .header-image{
+     height:350px;
+   }
+ 
+   .header-image .content2 {
+     height:50px;
+     width:200px;
+     bottom:-50px; 
+     text-align: center
+   }
+   
+     .header-image .content2 .first-block{
+       font-size:14px;
+       }
+
+       .header-image .content2 .second-block{
+         font-size:12px;
+         margin-top: 15px;
+       }
+ 
+       .header-image .content div{
+         height:40px;
+         font-size:12px
+       }
+       
+       .header-image .content .first-block {
+       width:140px; 
+       }
+       
+       .header-image .content .second-block{
+         width:220px; 
+       }
+       
+       .header-image .content .third-block {
+         width:180px;
+       }
+
+  }
+
   
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 650px) {
   
     nav .logo .logo-image{
       width:40px;
@@ -236,6 +282,8 @@
   
     .header-image .content2 {
       height:30px;
+      width:180px;
+      bottom:-38px; 
     }
     
       .header-image .content2 .first-block{
@@ -263,5 +311,28 @@
         .header-image .content .third-block {
           width:190px; 
         }
+
+        nav .logo .content div{
+          font-size:12px;
+        }
+      
+        nav .logo .content span{
+          font-size:10px;
+        }
+
+        .header-image .image-card img{
+          height:30px;
+          width:30px;
+        }
+
+        nav{
+          height:70px;
+        }
   
+   }
+
+   @media screen and (max-width: 390px) {
+    nav .logo {
+      margin-left: 30%;
+    }
    }

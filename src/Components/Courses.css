@@ -65,10 +65,35 @@
     .college {
         height: 300px
     }
+
+    .section6 .download {
+        width: 200px;
+    }
+    
+    .section6 .download span{
+        font-size:16px;
+    }
+
+    .section6 span {
+        font-size: 20px;
+    }
+    
+    .section6 p {
+        font-size: 16px;
+    }
+
+    .section6 div hr {
+        width: 40px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .college {
         height: 200px
     }
+
+    .section6 .download {
+        width: 190px;
+    }
+    
 }

@@ -23,7 +23,7 @@ const App = () => {
   }
 
   return (
-    <div className="app">
+    <div className="app" >
       <NavigationBar slide={toggleSlider} />
       {
         toggle === true ? <> <Slider slide={toggleSlider} /> <BackPress slide={toggleSlider} /> </> : <> </>

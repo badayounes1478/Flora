@@ -152,21 +152,23 @@
     }
 }
 
-@media screen and (max-width: 900px) {
-    .section4 .head {
-        height: 50px;
-        width: 150px;
-        font-size: 16px;
-    }
-}
 
 @media screen and (max-width: 670px) {
     .section4 .container .container2 .header-achivements {
-        grid-template-columns: repeat(1, 1fr)
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .section4 .container .container4 .container3 {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+
+    .section4 .container .container2 .header-achivements .achivements hr {
+        border: 2px solid #FAD831;
+        width: 25%;
+        margin-top: 10px
     }
 
     .section4 .container .container4 .container3 .content1 {

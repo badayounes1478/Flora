@@ -51,27 +51,42 @@
 @media screen and (max-width: 950px) {
 
     .section8 .numbers div .num{
-        font-size:20px;
+        font-size:30px;
     }
     
     .section8 .numbers div .content{
+        font-size:20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .section8 .numbers div .num{
+        font-size:20px;
+    }
+    
+    .section8 .text div .content{
         font-size:14px;
     }
 
 }
 
-@media screen and (max-width: 650px) {
-    .section8 .numbers{
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap:30px;
-        height:300px;
+@media screen and (max-width: 450px) {
+    .section8 .numbers div .num{
+        font-size:16px;
     }
-
+    
+    .section8 .text div .content{
+        font-size:10px;
+    }
 }
 
-@media screen and (max-width: 450px) {
-    .section8 .numbers{
-        grid-template-columns: repeat(2, 1fr);
-        height:400px;
+@media screen and (max-width: 350px) {
+    .section8 .numbers div .num{
+        font-size:12px;
+    }
+    
+    .section8 .text div .content{
+        font-size:8px;
     }
 }

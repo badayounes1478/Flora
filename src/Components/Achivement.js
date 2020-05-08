@@ -13,7 +13,7 @@ const Achivement = () => {
             <div className="head">
                 <img src={rectangle} alt="rect" >
                 </img>
-                <div>HIGHLIGHT</div>
+                <div>ACHIVEMENTS</div>
             </div>         
                <div className="container">
                 <div className="container2">

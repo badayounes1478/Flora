@@ -10,7 +10,7 @@ const Admission = () => {
             <div className="head">
                 <img src={rectangle} alt="rect" >
                 </img>
-                <div>HIGHLIGHT</div>
+                <div>ADMISSION</div>
             </div>       
                 <div className="admission_card">
                 <div className="admission_info">
