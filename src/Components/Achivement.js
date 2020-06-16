@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Achivement.css'
 import user from '../assets/user.svg'
 import school from '../assets/school.svg'
@@ -7,7 +7,24 @@ import star from '../assets/star.svg'
 import rectangle from '../assets/Path.svg'
 
 
+
 const Achivement = () => {
+
+    const [active, setactive] = useState(['active','inactive','inactive'])
+
+
+   const onActiveChange = (index) =>{
+        let filterState = active.map((data, i)=>{
+            if(i === index)
+            {
+               return data = 'active'
+            }else{
+                return data = 'inactive'
+            }
+        })    
+        setactive(filterState)
+    }
+
     return (
         <section className="section4" id="achivements">
             <div className="head">
@@ -22,20 +39,22 @@ const Achivement = () => {
                             <div className="logo">
                                 <img src={user} alt="user" />
                             </div>
-                            <strong>Student Achivements</strong>
-                            <hr />
+                            <strong onClick={() => onActiveChange(0)}>Student Achivements</strong>
+                            <div className={active[0]} />
                         </div>
                         <div className="achivements">
                             <div className="logo">
                                 <img src={school} alt="user" />
                             </div>
-                            <strong>Faculty Achivements</strong>
+                            <strong onClick={() => onActiveChange(1)}>Faculty Achivements</strong>
+                            <div className={active[1]}/>
                         </div>
                         <div className="achivements">
                             <div className="logo">
                                 <img src={school1} alt="user" />
                             </div>
-                            <strong>Department Achivements</strong>
+                            <strong onClick={() => onActiveChange(2)}>Department Achivements</strong>
+                            <div className={active[2]} />
                         </div>
                     </div>
                 </div>

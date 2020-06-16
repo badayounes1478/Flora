@@ -1,44 +1,24 @@
-import React, { useState } from 'react'
-import './App.css'
-import NavigationBar from './Components/NavigationBar'
-import Heighlight from './Components/Heighlight'
-import Campus from './Components/Campus'
-import Technology from './Components/Technology'
-import Achivement from './Components/Achivement'
-import Banner from './Components/Banner'
-import Courses from './Components/Courses'
-import Image from './Components/Image'
-import Numbers from './Components/Numbers'
-import Admission from './Components/Admission'
-import Footer from './Components/Footer'
-import Slider from './Components/Slider'
-import BackPress from './Components/BackPress'
+import React from 'react'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import Home from './Home'
+import Establishment from './Components/Establishment'
+import Founder from './Components/Founder'
+import Cofounder from './Components/Co_Founder'
+import Executive from './Components/Executive'
+import Vision from './Components/Vision'
 
 const App = () => {
-
-  const [toggle, settoggle] = useState(false)
-
-  const toggleSlider = () => {
-    settoggle(!toggle)
-  }
-
   return (
-    <div className="app" >
-      <NavigationBar slide={toggleSlider} />
-      {
-        toggle === true ? <> <Slider slide={toggleSlider} /> <BackPress slide={toggleSlider} /> </> : <> </>
-      }
-      <Heighlight />
-      <Campus />
-      <Technology />
-      <Achivement />
-      <Banner />
-      <Courses />
-      <Image />
-      <Numbers />
-      <Admission />
-      <Footer />
-    </div>
+    <BrowserRouter>
+        <Switch>
+      <Route exact path="/" component={Home} />
+      <Route  path="/establishment" component={Establishment} />
+      <Route  path="/founder" component={Founder} />
+      <Route  path="/co-founder" component={Cofounder} />
+      <Route  path="/executive" component={Executive} />
+      <Route  path="/vision" component={Vision} />
+      </Switch>
+    </BrowserRouter>
   )
 }
 

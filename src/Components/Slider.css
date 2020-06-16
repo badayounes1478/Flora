@@ -1,9 +1,9 @@
 .slider{
     position:absolute;
     left:0;
-    bottom:0;
-    width:250px;
-    height:100%;
+    right:0;
+    top:0;
+    padding:20px;
     background:#dcdcdc;
     display:flex;
     justify-content: center;
@@ -12,9 +12,37 @@
 }
 
 .slider ul li{
-  margin-top:40%
+  margin-top: 15px
 }
 
-.slider ul li a{
-  color: black
+.cross{
+  position:absolute;
+  right:30px;
+  top:30px;
+  font-size: 22px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropdown .dropbtn1 {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  padding-left: 24px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+}
+
+
+.slider ul li a {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  padding-left: 24px;
 }

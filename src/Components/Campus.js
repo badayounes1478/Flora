@@ -10,9 +10,16 @@ const Campus = () => {
                     <span>Campus life at Flora Institiute</span>
                     <div>
                         <hr />
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
-                            galley of type and scrambled it to make a type specimen It has survived not only five centuries, but also the leap into electronic
+                        <p>
+                        The campus epitomizes Flora’s vision, ‘Education for a Sustainable Development'. 
+                        Flora Institutes provides fresh air and ample opportunities for the holistic development 
+                        of students who will be accomplished individuals in many ways; happy and confident of 
+                        leading their lot to a brighter future. It is a placewhere brilliant minds assemble and 
+                        collaborate, where they pool together theirtalents across disciplines in service of big 
+                        projects and ideas. It’s a vibrant community teaming up with students collaborating 
+                        with experts and specialists; a place of creativity and innovation. It is an intersection of 
+                        disciplines, a launching pad for a brilliant career, and a highly unique state of mind. It is a 
+                        perfect environment to pursue your passion. Here the future is envisioned each day.
                 </p>
                     </div>
                 </div>

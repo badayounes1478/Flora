@@ -1,17 +1,25 @@
 import React from 'react'
-import './Slider.css'
+import './NavBar.css'
 import {Link} from 'react-router-dom'
 
 
-const Slider = (props) => {
-
+const NavBar = (props) => {
     return (
-        <div className="slider" >
-            <div className="cross" onClick={()=>props.slide()}>X</div>
-              <ul>
+        <nav>
+            <div className="menu1" onClick={() => props.slide()}>
+                    <i className="fa fa-bars"></i>
+                </div>
+    
+                <Link to="/" className="logo" style={{color:'#000000'}}>
+                    <div className="logo-image"></div>
+                    <div className="content">
+                        <div className="black-text">FLORA INSTITUTES</div>
+                    </div>
+                </Link>
+                <ul>
                     <li><div className="navbar">
                         <div className="dropdown">
-                            <button className="dropbtn1">ABOUT</button>
+                            <button className="dropbtn">ABOUT</button>
                             <div className="dropdown-content">
                                 <Link to="/establishment">Establishment</Link>
                                 <Link to="/founder">About Founder</Link>
@@ -23,7 +31,7 @@ const Slider = (props) => {
                     </div></li>
                     <li><div className="navbar">
                         <div className="dropdown">
-                            <button className="dropbtn1">ADMISSION</button>
+                            <button className="dropbtn">ADMISSION</button>
                             <div className="dropdown-content">
                                 <a href="#a">Flora College of Architecture</a>
                                 <a href="#a">Flora Valley School and Junior College</a>
@@ -33,11 +41,10 @@ const Slider = (props) => {
                             </div>
                         </div>
                     </div></li>
-                    <li><a href="#footer">CONTACT</a></li>
+                    <li><Link to="/#admission">CONTACT</Link></li>
                 </ul>
-
-        </div>
+            </nav>
     )
 }
 
-export default React.memo(Slider)
+export default NavBar

@@ -21,10 +21,10 @@
 .highlight .card-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 40px;
-    grid-gap: 50px
+    grid-gap: 30px
 }
 
 .highlight .card-section .card .box img {
@@ -52,7 +52,7 @@
 .highlight .card-section .card p {
     margin-top: 15px;
     font-size: 24px;
-    width: 80%;
+    width: 90%;
     letter-spacing: 0px;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 60px;

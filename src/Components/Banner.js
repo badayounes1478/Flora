@@ -6,11 +6,13 @@ const Banner = () => {
         <section className="section5">
             <div>
                 <span>
-                Flora Institute of Technology
-                            </span>
+                    Flora Institute
+                 </span>
                 <p>
-                    "The things taught in schools and colleges are not an education, but the means to an education."
-            </p>
+                    "The things taught in schools and colleges
+                     are not an education,
+                     but the means to an education."
+                </p>
             </div>
         </section>
     )

@@ -4,7 +4,7 @@
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap:20px;
+    grid-gap:10px;
 }
 
 .section2 .grid{
@@ -44,7 +44,7 @@
 }
 
 .section2 .content div p{
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 0px;
     font-family: 'Montserrat', sans-serif;
     padding-left: 15px

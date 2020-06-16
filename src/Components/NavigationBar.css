@@ -1,338 +1,422 @@
-  
-  .menu{
-    display:none
-  }
-  
-  nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height:100px;
-    align-items: center;
-    background-color: #fff
+  .menu1 {
+    display: none
   }
 
-  nav ul li a{
-    font-size: 18px;
-    color: black;
-    font-weight:600;
-    padding-left:24px
-  }
-  
-  nav .logo{
-    display:flex;
+  nav {
+    display: flex;
     flex-direction: row;
-    align-items:center;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 5%;
+    padding-right: 5%
+  }
+
+  nav ul li a {
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+    padding-left: 24px
+  }
+
+  nav .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center
   }
-  
-  nav .logo .logo-image{
-   background:url('../assets/logo.png');
-   width:80px;
-   height:80px;
-   background-size: cover
+
+  nav .logo .logo-image {
+    background: url('../assets/logo.png');
+    width: 80px;
+    height: 80px;
+    background-size: cover
   }
-  
-  
-  nav ul{
-    display:flex;
+
+
+  nav ul {
+    display: flex;
     flex-direction: row;
   }
-  
-  nav .logo .content{
+
+  nav .logo .content {
     margin-left: 10px;
   }
 
-  nav .logo .content div{
+  nav .logo .content .black-text {
     font-family: 'Montserrat', sans-serif;
-    font-size:16px;
-    font-weight: 600
+    font-size: 24px;
+    font-weight: 600;
+  }
+ 
+
+  /* Navbar container */
+  .navbar {
+    overflow: hidden;
   }
 
-  nav .logo .content span{
-    font-family: 'Montserrat', sans-serif;
-    font-size:14px;
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    text-decoration: none;
   }
-  
-  .header-image{
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+    padding-left: 24px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+  }
+
+
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding:10px;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: #8D8D8D;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-right: 15px;
+    font-size: 18px
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .header-image {
     position: relative;
-    background:url('../assets/header_image.jpg');
     width: 100%;
-    height:600px;
-    background-position:center;
-    background-repeat:no-repeat;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover
   }
-  
-  .header-image .content {
-    position:absolute;
-    top:120px;
-    left:10%;
+
+  .header-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 2;
   }
-  
-  .header-image .content div{
-    display:flex;
+
+
+  .header-image .content {
+    position: absolute;
+    top: 120px;
+    left: 10%;
+    z-index: 3;
+  }
+
+  .header-image .content div {
+    display: flex;
     align-items: center;
-    height:67px;
+    height: 67px;
     font-size: 22px;
     padding-left: 27px
   }
-  
+
   .header-image .content .first-block {
-  width:276px;
-  background-color: #666666;
-  color:#fff;  
+    width: 276px;
+    background-color: #666666;
+    color: #fff;
   }
-  
-  .header-image .content .second-block{
-    width:415px;
-  background-color: #C53418;
-  color:#fff; 
+
+  .header-image .content .second-block {
+    width: 415px;
+    background-color: #C53418;
+    color: #fff;
   }
-  
+
   .header-image .content .third-block {
-    width:382px;
-    background-color:  #FAD831       ;
-    color:#fff;  
+    width: 382px;
+    background-color: yellow;
+    color: #fff;
   }
-  
-  
+
+
+
   .header-image .content2 {
-    position:absolute;
-    height:118px;
-    width:536px;
-    background-color:#C53418;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    padding:20px;
+    position: absolute;
+    height: 118px;
+    width: 536px;
+    background-color: #C53418;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
     border-radius: 10px;
-    bottom:-80px; 
-    margin:0;
+    bottom: -80px;
+    margin: 0;
     left: 50%;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     box-shadow: 0px 3px 6px #00000029;
+    z-index: 3;
   }
-  
-  .header-image .content2 .first-block{
-  font-size:24px;
-  color:#fff;
-  font-size: 600
+
+  .header-image .content2 .first-block {
+    font-size: 24px;
+    color: #fff;
+    font-size: 600
   }
-  .header-image .content2 .second-block{
-    font-size:22px;
+
+  .header-image .content2 .second-block {
+    font-size: 22px;
     margin-top: 15px;
-    color:#dcdcdc;
+    color: #dcdcdc;
     font-family: 'Montserrat', sans-serif;
   }
 
-  .header-image .image-card{
-    position : absolute;
-    bottom:56px;
-    right:8%;
+  .header-image .image-card {
+    position: absolute;
+    bottom: 56px;
+    right: 8%;
   }
 
-  .header-image .image-card img{
-    height:40px;
-    width:40px;
+  .header-image .image-card img {
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    margin-left:15px
+    margin-left: 15px
   }
 
-  .header-image .image-card .active{
-    border : 3px solid #C53418;
+  .header-image .image-card .active {
+    border: 3px solid #C53418;
   }
-  
+
   @media screen and (max-width: 1000px) {
-   nav ul{
-       display: none
+    nav ul, nav button, nav a  {
+      display: none
     }
-  
-    .menu{
-      display:unset;
-      position: absolute;
-      left:20px;
-      font-size:30px;
-      color:#828282
-    }
-  
-    nav .logo .content{
-       font-size:14px
-    }
-  
-    nav .logo .logo-image{
-      width:50px;
-      height:50px;
-     }
-  
-    .header-image .content {
-      top:100px;
-      left:80px;
-    }
-  
-    .header-image{
-      height:400px;
-    }
-  
-    .header-image .content2 {
-      height:60px;
-      width:250px;
-      bottom:-50px; 
-    }
-    
-      .header-image .content2 .first-block{
-        font-size:16px;
-        }
 
-        .header-image .content2 .second-block{
-          font-size:14px;
-          margin-top: 15px;
-        }
-  
-        .header-image .content div{
-          height:40px;
-          font-size:14px
-        }
-        
-        .header-image .content .first-block {
-        width:160px; 
-        }
-        
-        .header-image .content .second-block{
-          width:250px; 
-        }
-        
-        .header-image .content .third-block {
-          width:200px;
-        }
-  
+    .menu1 {
+      display: unset;
+      left: 20px;
+      font-size: 30px;
+      color: #828282
+    }
+
+    nav .logo .content {
+      font-size: 14px
+    }
+
+    nav .logo .logo-image {
+      width: 50px;
+      height: 50px;
+    }
+
+    .header-image .content {
+      top: 100px;
+      left: 80px;
+    }
+
+    .header-image {
+      height: 400px;
+    }
+
+    .header-image .content2 {
+      height: 60px;
+      width: 250px;
+      bottom: -50px;
+    }
+
+    .header-image .content2 .first-block {
+      font-size: 16px;
+    }
+
+    .header-image .content2 .second-block {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    .header-image .content div {
+      height: 40px;
+      font-size: 14px
+    }
+
+    .header-image .content .first-block {
+      width: 160px;
+    }
+
+    .header-image .content .second-block {
+      width: 250px;
+    }
+
+    .header-image .content .third-block {
+      width: 200px;
+    }
+
   }
 
   @media screen and (max-width: 760px) {
 
- 
-   .header-image .content {
-     top:100px;
-     left:80px;
-   }
- 
-   .header-image{
-     height:350px;
-   }
- 
-   .header-image .content2 {
-     height:50px;
-     width:200px;
-     bottom:-50px; 
-     text-align: center
-   }
-   
-     .header-image .content2 .first-block{
-       font-size:14px;
-       }
 
-       .header-image .content2 .second-block{
-         font-size:12px;
-         margin-top: 15px;
-       }
- 
-       .header-image .content div{
-         height:40px;
-         font-size:12px
-       }
-       
-       .header-image .content .first-block {
-       width:140px; 
-       }
-       
-       .header-image .content .second-block{
-         width:220px; 
-       }
-       
-       .header-image .content .third-block {
-         width:180px;
-       }
+    .header-image .content {
+      top: 100px;
+      left: 80px;
+    }
+
+    .header-image {
+      height: 350px;
+    }
+
+    .header-image .content2 {
+      height: 50px;
+      width: 200px;
+      bottom: -50px;
+      text-align: center
+    }
+
+    .header-image .content2 .first-block {
+      font-size: 14px;
+    }
+
+    .header-image .content2 .second-block {
+      font-size: 12px;
+      margin-top: 15px;
+    }
+
+    .header-image .content div {
+      height: 40px;
+      font-size: 12px
+    }
+
+    .header-image .content .first-block {
+      width: 140px;
+    }
+
+    .header-image .content .second-block {
+      width: 220px;
+    }
+
+    .header-image .content .third-block {
+      width: 180px;
+    }
 
   }
 
-  
+
   @media screen and (max-width: 650px) {
-  
-    nav .logo .logo-image{
-      width:40px;
-      height:40px;
-     }
-  
-     nav .logo .content{
-      font-size:12px
-   }
-    
-  
-    .header-image{
+
+    nav .logo .logo-image {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav .logo .content {
+      font-size: 12px
+    }
+
+
+    .header-image {
       width: 100%;
-      height:300px;
+      height: 300px;
     }
-  
+
     .header-image .content {
-      top:50px;
-      left:10px;
+      top: 50px;
+      left: 10px;
     }
-  
+
     .header-image .content2 {
-      height:30px;
-      width:180px;
-      bottom:-38px; 
+      height: 30px;
+      width: 180px;
+      bottom: -38px;
     }
-    
-      .header-image .content2 .first-block{
-        font-size:12px;
-        }
-        
-        .header-image .content2 .second-block{
-          font-size:10px;
-          margin-top: 15px;
-        }
-  
-        .header-image .content div{
-          height:30px;
-          font-size:12px;
-        }
-        
-        .header-image .content .first-block {
-        width:150px;
-        }
-        
-        .header-image .content .second-block{
-        width:230px; 
-        }
-        
-        .header-image .content .third-block {
-          width:190px; 
-        }
 
-        nav .logo .content div{
-          font-size:12px;
-        }
-      
-        nav .logo .content span{
-          font-size:10px;
-        }
+    .header-image .content2 .first-block {
+      font-size: 12px;
+    }
 
-        .header-image .image-card img{
-          height:30px;
-          width:30px;
-        }
+    .header-image .content2 .second-block {
+      font-size: 10px;
+      margin-top: 15px;
+    }
 
-        nav{
-          height:70px;
-        }
-  
-   }
+    .header-image .content div {
+      height: 30px;
+      font-size: 12px;
+    }
 
-   @media screen and (max-width: 390px) {
+    .header-image .content .first-block {
+      width: 150px;
+    }
+
+    .header-image .content .second-block {
+      width: 230px;
+    }
+
+    .header-image .content .third-block {
+      width: 190px;
+    }
+
+    nav .logo .content div {
+      font-size: 12px;
+    }
+
+    nav .logo .content span {
+      font-size: 10px;
+    }
+
+    .header-image .image-card img {
+      height: 30px;
+      width: 30px;
+    }
+
+    nav {
+      height: 70px;
+    }
+
+  }
+
+  @media screen and (max-width: 400px) {
     nav .logo {
-      margin-left: 30%;
+      margin-left: 15%;
     }
-   }
+
+    nav .logo .content .black-text {
+      font-size: 16px;
+    }
+  }

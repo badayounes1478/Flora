@@ -18,31 +18,45 @@ const Heighlight = () => {
             <div className="card-section">
                 <div className="card">
                     <div className="box">
-                        <img src={medal} alt="medal" />
+                        <img src={work} alt="medal" />
                     </div>
-                    <strong>Center Of Excellence</strong>
+                    <strong>Sustainable Development</strong>
                     <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    We understand sustainable 
+                    development needs to be addressed 
+                    environmentally, socially and 
+                    economically. This is something that 
+                    affects us all, and therefore the 
+                    necessary change is the responsibility 
+                    that we practice sincerely.
                 </p>
                 </div>
                 <div className="card">
                     <div className="box">
-                        <img src={settings} alt="settings" />
+                        <img src={medal} alt="settings" />
                     </div>
-                    <strong>Center Of Excellence</strong>
+                    <strong>Focus on Excellence</strong>
                     <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    We value excellence and achievement 
+                    in all aspects from scholarship to 
+                    teaching, from research to service, from 
+                    student performance to support staff 
+                    to faculty. We focus our attention to 
+                    ensure the highest quality of our work.
 
                 </p>
                 </div>
                 <div className="card">
                     <div className="box">
-                        <img src={work} alt="work" />
+                        <img src={settings} alt="work" />
                     </div>
-                    <strong>Center Of Excellence</strong>
+                    <strong>Experimental</strong>
                     <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
+                    We provide an educational 
+                    environment that bridges theory and 
+                    practice, enhancing the ability of 
+                    students to fulfill their potential and to 
+                    contribute to society.                </p>
                 </div>
             </div>
         </section>

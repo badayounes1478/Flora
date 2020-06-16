@@ -1,8 +1,8 @@
 .section3{
-    margin-top:50px;
+    margin-top:100px;
     text-align: center;
     position: relative;
-    box-shadow: 0px 3px 6px #0000005C;
+        margin-bottom:100px;
 }
 
 .section3 .head strong{
@@ -12,6 +12,7 @@
 .section3 .logo{
     display:grid;
     grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
     padding-bottom: 60px
 }
 
@@ -27,8 +28,11 @@
     margin-top: 50px;
 }
 
+
+
 .section3 .logo .logo1{
-    grid-column-start: 2
+    grid-column-start: 2;
+    background-image: url('../assets/Architecture logo.png');
 }
 
 .section3 .logo .logo2, .logo4{
@@ -36,7 +40,7 @@
 }
 
 .section3 .logo strong{
-    margin-top: 140px;
+    margin-top: 180px;
 }
 
 @media screen and (max-width: 700px) {
@@ -50,7 +54,7 @@
     }
     
     .section3 .logo strong{
-        margin-top: 70px;
+        margin-top: 100px;
         font-size: 10px
     }
 
@@ -71,7 +75,7 @@
     }
     
     .section3 .logo .logo2, .logo4, .logo1, .logo3, .logo5{
-        margin-top:15px;
+        margin-top:50px;
     }
     
     .section3 .logo strong{

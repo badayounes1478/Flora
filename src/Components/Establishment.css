@@ -1,0 +1,69 @@
+.header-image1 {
+  position: relative;
+  background: url('../assets/FCOA\ ENTRANCE.jpeg');
+  width: 100%;
+  height: 487px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.header-image1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.header-image1 strong {
+  font-size: 50px;
+  z-index: 3;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 5%
+}
+
+.est-content {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px
+}
+
+.est-content p {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #707070;
+  margin-top: 30px
+}
+
+.est-content strong {
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+
+  .header-image1 {
+    height: 300px;
+  }
+
+  .est-content p {
+    font-size: 18px;
+  }
+
+  .est-content strong {
+    font-size: 25px;
+  }
+
+  .header-image1 strong {
+    font-size: 30px;
+
+  }
+}

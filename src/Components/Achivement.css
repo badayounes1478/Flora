@@ -62,10 +62,11 @@
 
 .section4 .container .container2 .header-achivements .achivements strong {
     font-size: 26px;
-    font-weight: 600
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.section4 .container .container2 .header-achivements .achivements hr {
+.section4 .container .container2 .header-achivements .achivements .active {
     border: 2px solid #FAD831;
     width: 77%;
     margin-top: 10px
